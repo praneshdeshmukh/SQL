@@ -66,3 +66,10 @@ LEFT OUTER JOIN
 Address 
 ON 
 Address.personId = Person.personId;
+
+// --------------------------------------------------
+
+SELECT FirstName,LastName,City,State
+FROM Person
+LEFT JOIN Address
+USING(PersonId)
